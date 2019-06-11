@@ -1,0 +1,21 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.full-height {
+    height: 100vh;
+    background-color: rgb(232, 248, 255);
+}
+
+.form-box {
+    background-color: white;
+    border: 0px solid;
+    border-radius: 20px;
+    box-shadow: 0px 5px 60px rgba(70, 69, 69, 0.247);
+    padding: 5%;
+}
