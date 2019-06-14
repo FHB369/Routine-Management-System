@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Routine Management System</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i|Roboto:500" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('css/app.css')}}">
     <link rel="stylesheet" href="{{ asset('css/style-for-landing.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/app.css')}}">
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
 
@@ -55,20 +55,32 @@
             <section class="hero text-center">
                 <div class="container-sm">
                     <div class="hero-inner">
-                        <h1 class="hero-title h2-mobile mt-0 is-revealing">Routine Management System</h1>
+                        <h1 class="hero-title h2-mobile mt-0 is-revealing google-font"><b>Routine Management System</b></h1>
+                        @guest
                         <p class="hero-paragraph is-revealing">To get your customized routine join now. Or find general
                             routine below.</p>
-                        <div class="hero-form newsletter-form field field-grouped is-revealing"
-                            style="padding-left:75px;">
-                            <div class="control" style="width:150px">
-                                <a class="button button-primary button-block button-shadow"
-                                    style="border-bottom: 3px solid #6ED5EF;" href="/login">Login</a>
+                            <div class="hero-form newsletter-form field field-grouped is-revealing"
+                                style="padding-left:75px;">
+                                <div class="control" style="width:150px">
+                                    <a class="button button-primary button-block button-shadow"
+                                        style="border-bottom: 3px solid #6ED5EF;" href="/login">Login</a>
+                                </div>
+                                <div class="control" style="width:150px">
+                                    <a class="button button-block button-shadow" style="border-bottom: 3px solid #6ED5EF;"
+                                        href="/register">Register</a>
+                                </div>
+                            </div> 
+                        @else
+                            <p class="hero-paragraph is-revealing">Welcome back {{ Auth::user()->name}}</p>
+                            <div class="hero-form newsletter-form field field-grouped is-revealing"
+                                style="padding-left:75px;">
+                                <div class="control" style="width:300px">
+                                    <a class="button button-primary button-block button-shadow"
+                                        style="border-bottom: 3px solid #6ED5EF;" href="/home">Go to your dashboard</a>
+                                </div>
                             </div>
-                            <div class="control" style="width:150px">
-                                <a class="button button-block button-shadow" style="border-bottom: 3px solid #6ED5EF;"
-                                    href="/register">Register</a>
-                            </div>
-                        </div>
+                        @endguest
+                        
                         <div class="hero-browser">
                             <div class="bubble-3 is-revealing">
                                 <svg width="427" height="286" viewBox="0 0 427 286" xmlns="http://www.w3.org/2000/svg"
@@ -159,7 +171,7 @@
                             </div>
 
                             <div class="hero-browser-inner is-revealing">
-                                <div id="app">
+                                <div id="app_welcome">
                                     
                                 </div>
                             </div>

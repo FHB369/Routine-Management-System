@@ -3,10 +3,13 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
+use App\Student;
+use App\Teacher;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Support\Facades\Auth;
 
 class RegisterController extends Controller
 {
@@ -49,7 +52,12 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
+            'type' => ['required', 'string', 'max:255'],
             'name' => ['required', 'string', 'max:255'],
+            'department' => ['required', 'string', 'max:255'],
+            'designation' => ['required', 'string', 'max:255'],
+            'reg_no' => ['required', 'string', 'max:255', 'unique:students'],
+            'session' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
         ]);
@@ -63,10 +71,31 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+        $user = User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
+
+        $type = $data['type'];
+
+        if ($type == "student") {
+            $student = new Student;
+            $student->reg_no = $data['reg_no'];
+            $student->department = $data['department'];
+            $student->session = $data['session'];
+            $student->type = "GEN_STUDENT";
+            $student->user_id = $user->id;
+            $student->save();
+        } elseif ($type == "teacher") {
+            $teacher = new Teacher;
+            $teacher->department = $data['department'];
+            $teacher->designation = $data['designation'];
+            $teacher->type = "GEN_TEACHER";
+            $teacher->user_id = $user->id;
+            $teacher->save();
+        }
+
+        return $user;
     }
 }

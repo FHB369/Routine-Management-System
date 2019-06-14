@@ -61696,143 +61696,107 @@ function App() {
     className: "col-md-4"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
     "for": "selectSchool"
-  }, "Select School"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
+  }, " Select School "), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
     className: "form-control form-control-sm",
     name: "selectSchool",
     id: "selectSchool"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
     value: "1"
-  }, "Agriculture & Mineral Sciences"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+  }, "Agriculture & Mineral Sciences", " "), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
     value: "2"
-  }, "Applied Sciences & Technology"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+  }, "Applied Sciences & Technology", " "), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
     value: "3"
-  }, "Life Sciences"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+  }, " Life Sciences "), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
     value: "4"
-  }, "Management & Business Administration"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+  }, "Management & Business Administration", " "), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
     value: "5"
-  }, "Physical Sciences"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+  }, " Physical Sciences "), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
     value: "6"
-  }, "Social Sciences"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, " Social Sciences "), " "), " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "col-md-4"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
     "for": "selectDept"
-  }, "Select Department"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
+  }, " Select Department "), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
     className: "form-control form-control-sm",
     name: "selectDept",
     id: "selectDept"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
     value: "10"
-  }, "FES"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+  }, " FES "), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
     value: "20"
-  }, "ARC"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+  }, " ARC "), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
     value: "21"
-  }, "CEP"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+  }, " CEP "), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
     value: "22"
-  }, "CEE"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+  }, " CEE "), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
     value: "23"
-  }, "CSE"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+  }, " CSE "), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
     value: "24"
-  }, "EEE"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+  }, " EEE "), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
     value: "25"
-  }, "FET"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+  }, " FET "), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
     value: "26"
-  }, "IPE"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+  }, " IPE "), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
     value: "27"
-  }, "MEE"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+  }, " MEE "), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
     value: "28"
-  }, "PME"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+  }, " PME "), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
     value: "30"
-  }, "BMB"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+  }, " BMB "), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
     value: "31"
-  }, "GEB"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+  }, " GEB "), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
     value: "40"
-  }, "BUS"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+  }, " BUS "), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
     value: "50"
-  }, "CHE"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+  }, " CHE "), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
     value: "51"
-  }, "GEE"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+  }, " GEE "), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
     value: "52"
-  }, "MAT"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+  }, " MAT "), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
     value: "53"
-  }, "OCG"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+  }, " OCG "), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
     value: "54"
-  }, "PHY"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+  }, " PHY "), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
     value: "55"
-  }, "STA"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+  }, " STA "), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
     value: "60"
-  }, "ANT"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+  }, " ANT "), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
     value: "61"
-  }, "BAN"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+  }, " BAN "), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
     value: "62"
-  }, "ECO"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+  }, " ECO "), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
     value: "63"
-  }, "ENG"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+  }, " ENG "), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
     value: "64"
-  }, "PSS"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+  }, " PSS "), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
     value: "65"
-  }, "PAD"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+  }, " PAD "), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
     value: "66"
-  }, "SCW"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+  }, " SCW "), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
     value: "67"
-  }, "SOC"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, " SOC "), " "), " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "col-md-4"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
     "for": "selectSemester"
-  }, "Select Semester"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
+  }, " Select Semester "), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
     className: "form-control form-control-sm",
     name: "selectSemester",
     id: "selectSemester"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
     value: "11"
-  }, "1/1"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+  }, " 1 / 1 "), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
     value: "21"
-  }, "2/1"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+  }, " 2 / 1 "), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
     value: "31"
-  }, "3/1"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+  }, " 3 / 1 "), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
     value: "41"
-  }, "4/1")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+  }, " 4 / 1 "), " "), " "), " "), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     className: "btn btn-primary",
     type: "submit"
-  }, "Find Routine")));
+  }, "Find Routine", " "), " "), " ");
 }
 
-react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(App, null), document.querySelector("#app"));
-/*
-<div class="form-box">
-                                        <form>
-                                            <div class="form-group">
-                                                <label for="exampleFormControlInput1">Email address</label>
-                                                <input type="email" class="form-control" id="exampleFormControlInput1"
-                                                    placeholder="name@example.com">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="exampleFormControlSelect1">Example select</label>
-                                                <select class="form-control" id="exampleFormControlSelect1">
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
-                                                    <option>5</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="exampleFormControlSelect2">Example multiple select</label>
-                                                <select multiple class="form-control" id="exampleFormControlSelect2">
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
-                                                    <option>5</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="exampleFormControlTextarea1">Example textarea</label>
-                                                <textarea class="form-control" id="exampleFormControlTextarea1"
-                                                    rows="3"></textarea>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    */
+react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(App, null), document.querySelector("#app_welcome"));
 
 /***/ }),
 

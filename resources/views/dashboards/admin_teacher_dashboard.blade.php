@@ -7,8 +7,7 @@
             <div class="site-header-inner">
                 <div class="brand header-brand" style="margin:auto;">
                     <h6 class="m-0">
-                        <a href="{{ route('logout') }}" onclick="event.preventDefault();
-                        document.getElementById('logout-form').submit();">
+                        <a href="{{ route('/') }}">
                             <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                                 <defs>
                                     <linearGradient x1="100%" y1="0%" x2="0%" y2="100%" id="logo-gradient-b">
@@ -33,9 +32,7 @@
                                 </g>
                             </svg>
                         </a>
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                            @csrf
-                        </form>
+
 
                     </h6>
                     Routine Management System
@@ -49,40 +46,11 @@
             <div class="col-md-12">
                 <div class="form-box auth-box">
                     <div class="row">
-                        <div class="col-md-12">
-                            @if (session('status'))
-                            <div class="alert alert-success" role="alert">
-                                {{ session('status') }}
-                            </div>
-                            @endif
-
-                            <form method="POST" class="center-text" action="{{ route('password.email') }}">
-                                @csrf
-
-                                <div class="form-group row">
-                                    <div class="col-md-12">
-                                        <input id="email" type="email" placeholder="Email"
-                                            class="form-control @error('email') is-invalid @enderror" name="email"
-                                            value="{{ old('email') }}" required autocomplete="email" autofocus>
-
-                                        @error('email')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                        @enderror
-                                    </div>
-                                </div>
-
-                                <div class="form-group row mb-0">
-                                    <div class="col-md-12">
-                                        <button type="submit" class="btn btn-primary">
-                                            {{ __('Send Password Reset Link') }}
-                                        </button>
-                                    </div>
-                                </div>
-
-                            </form>
-                        </div>
+                        <h4 class="google-font center-text col-md-12">Admin Teacher</h4>
+                        <form id="logout-form" class="col-md-12 center-text" action="{{ route('logout') }}" method="POST">
+                            @csrf
+                            <button class="btn btn-primary" type="submit">Logout</button>
+                        </form>
                     </div>
                 </div>
             </div>
