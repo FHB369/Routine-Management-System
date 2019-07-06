@@ -11,13 +11,12 @@
 
     <title>{{ config('app.name', 'Laravel') }} {{ ucfirst(config('multiauth.prefix')) }}</title>
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
+
+    <script src="https://kit.fontawesome.com/de55b9a4c4.js"></script>
     <!-- Styles -->
     <link href="{{ asset('css/style-for-landing.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -80,6 +79,9 @@
             @yield('content')
         </main>
     </div>
+
+<script src="{{ asset('js/main-for-landing.min.js')}}"></script>
+<script src="{{ asset('js/admin.js') }}"></script>
 </body>
 
 </html>

@@ -60,7 +60,7 @@
                         <p class="hero-paragraph is-revealing">To get your customized routine join now. Or find general
                             routine below.</p>
                             <div class="hero-form newsletter-form field field-grouped is-revealing"
-                                style="padding-left:75px;">
+                                style="padding-left:87px;">
                                 <div class="control" style="width:150px">
                                     <a class="button button-primary button-block button-shadow"
                                         style="border-bottom: 3px solid #6ED5EF;" href="/login">Login</a>
@@ -73,10 +73,10 @@
                         @else
                             <p class="hero-paragraph is-revealing">Welcome back {{ Auth::user()->name}}</p>
                             <div class="hero-form newsletter-form field field-grouped is-revealing"
-                                style="padding-left:75px;">
+                                style="padding-left:87px;">
                                 <div class="control" style="width:300px">
                                     <a class="button button-primary button-block button-shadow"
-                                        style="border-bottom: 3px solid #6ED5EF;" href="/home">Go to your dashboard</a>
+                                    style="border-bottom: 3px solid #6ED5EF;" href="{{ route('home')}}">Go to your dashboard</a>
                                 </div>
                             </div>
                         @endguest
