@@ -1,5 +1,9 @@
 {
     "/js/admin.js": "/js/admin.js",
+    "/js/adminTeacherDash.js": "/js/adminTeacherDash.js",
     "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css"
+    "/css/app.css": "/css/app.css",
+    "/js/crDash.js": "/js/crDash.js",
+    "/js/studentDash.js": "/js/studentDash.js",
+    "/js/teacherDash.js": "/js/teacherDash.js"
 }

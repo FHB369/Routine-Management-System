@@ -48,4 +48,9 @@ class User extends Authenticatable
     {
         return $this->hasOne('App\Teacher');
     }
+
+    public function AauthAcessToken()
+    {
+        return $this->hasMany('App\OauthAccessToken');
+    }
 }

@@ -22,3 +22,13 @@ Route::get('/dash', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home/adminTeacher/createRoutine', 'HomeController@index');
+Route::get('/home/adminTeacher/modifyRoutine', 'HomeController@index');
+Route::get('/home/adminTeacher/showRoutine', 'HomeController@index');
+
+Route::get('/home/cr/modifyRoutine', 'HomeController@index');
+Route::get('/home/cr/showRoutine', 'HomeController@index');
+
+Route::get('/home/teacher/modifyRoutine', 'HomeController@index');
+Route::get('/home/teacher/showRoutine', 'HomeController@index');
+Route::get('/home/student/showRoutine', 'HomeController@index');

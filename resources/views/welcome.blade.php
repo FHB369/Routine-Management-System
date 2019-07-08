@@ -170,7 +170,7 @@
 
                             </div>
 
-                            <div class="hero-browser-inner is-revealing">
+                            <div class="col-md-12 hero-browser-inner is-revealing">
                                 <div id="app_welcome">
                                     
                                 </div>

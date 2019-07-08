@@ -18,6 +18,7 @@ class CreateCoursesTable extends Migration
             $table->string('code');
             $table->string('name');
             $table->float('credit');
+            $table->string('semester');
             $table->string('type');
         });
     }

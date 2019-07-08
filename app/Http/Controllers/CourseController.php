@@ -20,6 +20,7 @@ class CourseController extends Controller
             'code' => 'required',
             'name' => 'required',
             'credit' => 'required',
+            'semester' => 'required',
             'type' => 'required',
         ]);
 
@@ -27,9 +28,16 @@ class CourseController extends Controller
             'name' => $validatedData['name'],
             'code' => $validatedData['code'],
             'credit' => $validatedData['credit'],
+            'semester' => $validatedData['semester'],
             'type' => $validatedData['type'],
         ]);
 
         return response()->json('Course created!');
+    }
+
+    public function semester(Request $request, $semester)
+    {
+        $courses = Course::where('semester', $semester)->get();
+        return $courses->toJson();
     }
 }

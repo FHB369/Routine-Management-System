@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -65531,19 +65531,6 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./resources/js/admin.js":
-/*!*******************************!*\
-  !*** ./resources/js/admin.js ***!
-  \*******************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
-
-__webpack_require__(/*! ./components/admin/AdminDash */ "./resources/js/components/admin/AdminDash.js");
-
-/***/ }),
-
 /***/ "./resources/js/bootstrap.js":
 /*!***********************************!*\
   !*** ./resources/js/bootstrap.js ***!
@@ -65602,10 +65589,1639 @@ if (token) {
 
 /***/ }),
 
-/***/ "./resources/js/components/admin/AdminDash.js":
-/*!****************************************************!*\
-  !*** ./resources/js/components/admin/AdminDash.js ***!
-  \****************************************************/
+/***/ "./resources/js/components/dashboards/Teacher/Dash.jsx":
+/*!*************************************************************!*\
+  !*** ./resources/js/components/dashboards/Teacher/Dash.jsx ***!
+  \*************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+
+var Dash =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Dash, _Component);
+
+  function Dash() {
+    _classCallCheck(this, Dash);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Dash).apply(this, arguments));
+  }
+
+  _createClass(Dash, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-md-12 dash-box img-bg my-2"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        className: "google-font text-light"
+      }, "Welcome to your dashboard"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row mt-4"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col mt-4"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
+        className: "google-font text-light"
+      }, "Department"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        className: "google-font text-justify text-light display-4"
+      }, "CSE")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col dash-box pill-bg py-4 my-2 text-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+        to: "/home/teacher/showRoutine",
+        className: "no-underline"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "zoom-on-hover no-underline text-dark"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        className: "display-3"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        "class": "fas fa-calendar-alt"
+      })), "Show Routine"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col ml-3 dash-box pill-bg py-4 my-2 text-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+        to: "/home/teacher/modifyRoutine",
+        className: "no-underline"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "zoom-on-hover no-underline text-dark"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        className: "display-3"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        "class": "fas fa-calendar-check"
+      })), "Modify Routine"))));
+    }
+  }]);
+
+  return Dash;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (Dash);
+
+/***/ }),
+
+/***/ "./resources/js/components/dashboards/Teacher/Modify.jsx":
+/*!***************************************************************!*\
+  !*** ./resources/js/components/dashboards/Teacher/Modify.jsx ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _Popup__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Popup */ "./resources/js/components/dashboards/Teacher/Popup.jsx");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+
+
+
+var Modify =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Modify, _Component);
+
+  function Modify(props) {
+    var _this;
+
+    _classCallCheck(this, Modify);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Modify).call(this, props));
+    _this.state = {
+      sunday: [],
+      monday: [],
+      tuesday: [],
+      wednesday: [],
+      thursday: [],
+      id: "",
+      error: "",
+      isPopup: false,
+      session: "",
+      semester: "",
+      section: "",
+      courses: [],
+      dept: "",
+      classrooms: [],
+      isShowable: false
+    };
+    _this.togglePopup = _this.togglePopup.bind(_assertThisInitialized(_this));
+    _this.closePopup = _this.closePopup.bind(_assertThisInitialized(_this));
+    _this.reload = _this.reload.bind(_assertThisInitialized(_this));
+    _this.handleSessionSubmit = _this.handleSessionSubmit.bind(_assertThisInitialized(_this));
+    return _this;
+  }
+
+  _createClass(Modify, [{
+    key: "togglePopup",
+    value: function togglePopup(event) {
+      event.preventDefault();
+      this.setState({
+        isPopup: !this.state.isPopup,
+        id: event.target.id
+      });
+    }
+  }, {
+    key: "closePopup",
+    value: function closePopup() {
+      this.setState({
+        isPopup: !this.state.isPopup
+      });
+    }
+  }, {
+    key: "handleSessionSubmit",
+    value: function handleSessionSubmit(event) {
+      var _this2 = this;
+
+      event.preventDefault();
+
+      if (event.target.semester.value != null && event.target.session.value != null && event.target.section.value != null) {
+        this.setState({
+          session: event.target.session.value,
+          semester: event.target.semester.value,
+          section: event.target.section.value
+        });
+        axios__WEBPACK_IMPORTED_MODULE_1___default.a.put("/api/courses/".concat(event.target.semester.value)).then(function (response) {
+          if (response.status == 200) {
+            _this2.setState({
+              courses: response.data
+            });
+
+            console.log(_this2.state.courses);
+          }
+        });
+        axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/api/classrooms").then(function (response) {
+          if (response.status == 200) {
+            _this2.setState({
+              classrooms: response.data
+            });
+
+            console.log(_this2.state.classrooms);
+          }
+        });
+        axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/api/routine/CSE/".concat(event.target.session.value, "/").concat(event.target.semester.value, "/").concat(event.target.section.value, "/Sunday")).then(function (response) {
+          if (response.status == 200 && response.data.length != 0) {
+            _this2.setState({
+              sunday: response.data[0],
+              isShowable: true
+            });
+
+            console.log("Sunday:");
+            console.log(_this2.state.sunday);
+          } else {
+            _this2.setState({
+              isShowable: false
+            });
+          }
+        });
+        axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/api/routine/CSE/".concat(event.target.session.value, "/").concat(event.target.semester.value, "/").concat(event.target.section.value, "/Monday")).then(function (response) {
+          if (response.status == 200 && response.data.length != 0) {
+            _this2.setState({
+              monday: response.data[0],
+              isShowable: true
+            });
+
+            console.log(_this2.state.monday);
+          } else {
+            _this2.setState({
+              isShowable: false
+            });
+          }
+        });
+        axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/api/routine/CSE/".concat(event.target.session.value, "/").concat(event.target.semester.value, "/").concat(event.target.section.value, "/Tuesday")).then(function (response) {
+          if (response.status == 200 && response.data.length != 0) {
+            _this2.setState({
+              tuesday: response.data[0],
+              isShowable: true
+            });
+
+            console.log(_this2.state.tuesday);
+          } else {
+            _this2.setState({
+              isShowable: false
+            });
+          }
+        });
+        axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/api/routine/CSE/".concat(event.target.session.value, "/").concat(event.target.semester.value, "/").concat(event.target.section.value, "/Wednesday")).then(function (response) {
+          if (response.status == 200 && response.data.length != 0) {
+            _this2.setState({
+              wednesday: response.data[0],
+              isShowable: true
+            });
+
+            console.log(_this2.state.wednesday);
+          } else {
+            _this2.setState({
+              isShowable: false
+            });
+          }
+        });
+        axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/api/routine/CSE/".concat(event.target.session.value, "/").concat(event.target.semester.value, "/").concat(event.target.section.value, "/Thursday")).then(function (response) {
+          if (response.status == 200 && response.data.length != 0) {
+            _this2.setState({
+              thursday: response.data[0],
+              isShowable: true
+            });
+
+            console.log(_this2.state.thursday);
+          } else {
+            _this2.setState({
+              isShowable: false
+            });
+          }
+        });
+      }
+    }
+  }, {
+    key: "reload",
+    value: function reload() {
+      var _this3 = this;
+
+      axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/api/routine/CSE/".concat(this.state.session, "/").concat(this.state.semester, "/").concat(this.state.section, "/Sunday")).then(function (response) {
+        if (response.status == 200 && response.data.length != 0) {
+          _this3.setState({
+            sunday: response.data[0]
+          });
+
+          console.log("Sunday:");
+          console.log(_this3.state.sunday);
+        } else if (response.status == 200 && response.data.length == 0) {
+          var dummy = {
+            department: "CSE",
+            session: _this3.state.session,
+            semester: _this3.state.semester,
+            section: _this3.state.section,
+            day: "Sunday",
+            t8_9_course: "",
+            t8_9_classroom: "",
+            t9_10_course: "",
+            t9_10_classroom: "",
+            t10_11_course: "",
+            t10_11_classroom: "",
+            t11_12_course: "",
+            t11_12_classroom: "",
+            t12_1_course: "",
+            t12_1_classroom: "",
+            t2_3_course: "",
+            t2_3_classroom: "",
+            t3_4_course: "",
+            t3_4_classroom: "",
+            t4_5_course: "",
+            t4_5_classroom: ""
+          };
+          axios__WEBPACK_IMPORTED_MODULE_1___default.a.post("/api/routine/", dummy).then(function (response) {
+            if (response.status == 200) {
+              console.log("successfully initiated");
+            }
+          });
+        }
+      });
+      axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/api/routine/CSE/".concat(this.state.session, "/").concat(this.state.semester, "/").concat(this.state.section, "/Monday")).then(function (response) {
+        if (response.status == 200 && response.data.length != 0) {
+          _this3.setState({
+            monday: response.data[0]
+          });
+
+          console.log(_this3.state.monday);
+        } else if (response.status == 200 && response.data.length == 0) {
+          var dummy = {
+            department: "CSE",
+            session: _this3.state.session,
+            semester: _this3.state.semester,
+            section: _this3.state.section,
+            day: "Monday",
+            t8_9_course: "",
+            t8_9_classroom: "",
+            t9_10_course: "",
+            t9_10_classroom: "",
+            t10_11_course: "",
+            t10_11_classroom: "",
+            t11_12_course: "",
+            t11_12_classroom: "",
+            t12_1_course: "",
+            t12_1_classroom: "",
+            t2_3_course: "",
+            t2_3_classroom: "",
+            t3_4_course: "",
+            t3_4_classroom: "",
+            t4_5_course: "",
+            t4_5_classroom: ""
+          };
+          axios__WEBPACK_IMPORTED_MODULE_1___default.a.post("/api/routine/", dummy).then(function (response) {
+            if (response.status == 200) {
+              console.log("successfully initiated");
+            }
+          });
+        }
+      });
+      axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/api/routine/CSE/".concat(this.state.session, "/").concat(this.state.semester, "/").concat(this.state.section, "/Tuesday")).then(function (response) {
+        if (response.status == 200 && response.data.length != 0) {
+          _this3.setState({
+            tuesday: response.data[0]
+          });
+
+          console.log(_this3.state.tuesday);
+        } else if (response.status == 200 && response.data.length == 0) {
+          var dummy = {
+            department: "CSE",
+            session: _this3.state.session,
+            semester: _this3.state.semester,
+            section: _this3.state.section,
+            day: "Tuesday",
+            t8_9_course: "",
+            t8_9_classroom: "",
+            t9_10_course: "",
+            t9_10_classroom: "",
+            t10_11_course: "",
+            t10_11_classroom: "",
+            t11_12_course: "",
+            t11_12_classroom: "",
+            t12_1_course: "",
+            t12_1_classroom: "",
+            t2_3_course: "",
+            t2_3_classroom: "",
+            t3_4_course: "",
+            t3_4_classroom: "",
+            t4_5_course: "",
+            t4_5_classroom: ""
+          };
+          axios__WEBPACK_IMPORTED_MODULE_1___default.a.post("/api/routine/", dummy).then(function (response) {
+            if (response.status == 200) {
+              console.log("successfully initiated");
+            }
+          });
+        }
+      });
+      axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/api/routine/CSE/".concat(this.state.session, "/").concat(this.state.semester, "/").concat(this.state.section, "/Wednesday")).then(function (response) {
+        if (response.status == 200 && response.data.length != 0) {
+          _this3.setState({
+            wednesday: response.data[0]
+          });
+
+          console.log(_this3.state.wednesday);
+        } else if (response.status == 200 && response.data.length == 0) {
+          var dummy = {
+            department: "CSE",
+            session: _this3.state.session,
+            semester: _this3.state.semester,
+            section: _this3.state.section,
+            day: "Wednesday",
+            t8_9_course: "",
+            t8_9_classroom: "",
+            t9_10_course: "",
+            t9_10_classroom: "",
+            t10_11_course: "",
+            t10_11_classroom: "",
+            t11_12_course: "",
+            t11_12_classroom: "",
+            t12_1_course: "",
+            t12_1_classroom: "",
+            t2_3_course: "",
+            t2_3_classroom: "",
+            t3_4_course: "",
+            t3_4_classroom: "",
+            t4_5_course: "",
+            t4_5_classroom: ""
+          };
+          axios__WEBPACK_IMPORTED_MODULE_1___default.a.post("/api/routine/", dummy).then(function (response) {
+            if (response.status == 200) {
+              console.log("successfully initiated");
+            }
+          });
+        }
+      });
+      axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/api/routine/CSE/".concat(this.state.session, "/").concat(this.state.semester, "/").concat(this.state.section, "/Thursday")).then(function (response) {
+        if (response.status == 200 && response.data.length != 0) {
+          _this3.setState({
+            thursday: response.data[0]
+          });
+
+          console.log(_this3.state.thursday);
+        } else if (response.status == 200 && response.data.length == 0) {
+          var dummy = {
+            department: "CSE",
+            session: _this3.state.session,
+            semester: _this3.state.semester,
+            section: _this3.state.section,
+            day: "Thursday",
+            t8_9_course: "",
+            t8_9_classroom: "",
+            t9_10_course: "",
+            t9_10_classroom: "",
+            t10_11_course: "",
+            t10_11_classroom: "",
+            t11_12_course: "",
+            t11_12_classroom: "",
+            t12_1_course: "",
+            t12_1_classroom: "",
+            t2_3_course: "",
+            t2_3_classroom: "",
+            t3_4_course: "",
+            t3_4_classroom: "",
+            t4_5_course: "",
+            t4_5_classroom: ""
+          };
+          axios__WEBPACK_IMPORTED_MODULE_1___default.a.post("/api/routine/", dummy).then(function (response) {
+            if (response.status == 200) {
+              console.log("successfully initiated");
+            }
+          });
+        }
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        id: "top-box",
+        className: "dash-box col-md-10 offset-md-1 py-2 text-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+        className: "google-font mt-4 text-center"
+      }, "Select Session & Semester"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+        onSubmit: this.handleSessionSubmit
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        "class": "form-group"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
+        "class": "col form-control",
+        id: "exampleFormControlSelect1",
+        required: true,
+        name: "session"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+        disabled: true,
+        selected: true
+      }, "Select Session"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "2015-16"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "2016-17"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "2017-18"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "2018-19")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
+        "class": "col ml-2 form-control",
+        id: "exampleFormControlSelect1",
+        required: true,
+        name: "semester"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+        disabled: true,
+        selected: true
+      }, "Select Semester"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "1-1"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "1-2"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "2-1"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "2-2"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "3-1"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "3-2"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "4-1"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "4-2")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
+        "class": "col ml-2 form-control",
+        id: "exampleFormControlSelect1",
+        required: true,
+        name: "section"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+        disabled: true,
+        selected: true
+      }, "Select Section"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "A"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "B"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "No Section")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form-group"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        type: "submit",
+        className: "btn btn-success"
+      }, "Proceed")))), this.state.isShowable ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        id: "routine-view"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        className: "google-font mt-4 text-center"
+      }, "Modify existing routine"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "fixed"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-primary text-center fixed-day",
+        disabled: true
+      }, "Day\xA0"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-info text-center",
+        disabled: true
+      }, "8-9"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-info text-center",
+        disabled: true
+      }, "9-10"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-info text-center",
+        disabled: true
+      }, "10-11"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-info text-center",
+        disabled: true
+      }, "11-12"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-info text-center",
+        disabled: true
+      }, "12-1"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-primary text-center fixed-break",
+        disabled: true
+      }, "Break"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-info text-center",
+        disabled: true
+      }, "2-3"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-info text-center",
+        disabled: true
+      }, "3-4"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-info text-center",
+        disabled: true
+      }, "4-5")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-primary text-center fixed-day"
+      }, "Sunday"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        onClick: this.togglePopup,
+        id: "a1"
+      }, this.state.sunday.t8_9_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.sunday.t8_9_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        onClick: this.togglePopup,
+        id: "a2"
+      }, this.state.sunday.t9_10_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.sunday.t9_10_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        onClick: this.togglePopup,
+        id: "a3"
+      }, this.state.sunday.t10_11_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.sunday.t10_11_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        onClick: this.togglePopup,
+        id: "a4"
+      }, this.state.sunday.t11_12_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.sunday.t11_12_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        onClick: this.togglePopup,
+        id: "a5"
+      }, this.state.sunday.t12_1_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.sunday.t12_1_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-primary text-center fixed-break"
+      }, "\xA0"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        onClick: this.togglePopup,
+        id: "a6"
+      }, this.state.sunday.t2_3_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.sunday.t2_3_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        onClick: this.togglePopup,
+        id: "a7"
+      }, this.state.sunday.t3_4_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.sunday.t3_4_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        onClick: this.togglePopup,
+        id: "a8"
+      }, this.state.sunday.t4_5_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.sunday.t4_5_classroom)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-primary text-center fixed-day"
+      }, "Monday"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        onClick: this.togglePopup,
+        id: "b1"
+      }, this.state.monday.t8_9_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.monday.t8_9_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        onClick: this.togglePopup,
+        id: "b2"
+      }, this.state.monday.t9_10_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.monday.t9_10_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        onClick: this.togglePopup,
+        id: "b3"
+      }, this.state.monday.t10_11_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.monday.t10_11_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        onClick: this.togglePopup,
+        id: "b4"
+      }, this.state.monday.t11_12_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.monday.t11_12_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        onClick: this.togglePopup,
+        id: "b5"
+      }, this.state.monday.t12_1_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.monday.t12_1_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-primary text-center fixed-break"
+      }, "\xA0"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        onClick: this.togglePopup,
+        id: "b6"
+      }, this.state.monday.t2_3_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.monday.t2_3_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        onClick: this.togglePopup,
+        id: "b7"
+      }, this.state.monday.t3_4_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.monday.t3_4_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        onClick: this.togglePopup,
+        id: "b8"
+      }, this.state.monday.t4_5_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.monday.t4_5_classroom)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-primary text-center fixed-day"
+      }, "Tuesday"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        onClick: this.togglePopup,
+        id: "c1"
+      }, this.state.tuesday.t8_9_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.tuesday.t8_9_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        onClick: this.togglePopup,
+        id: "c2"
+      }, this.state.tuesday.t9_10_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.tuesday.t9_10_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        onClick: this.togglePopup,
+        id: "c3"
+      }, this.state.tuesday.t10_11_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.tuesday.t10_11_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        onClick: this.togglePopup,
+        id: "c4"
+      }, this.state.tuesday.t11_12_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.tuesday.t11_12_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        onClick: this.togglePopup,
+        id: "c5"
+      }, this.state.tuesday.t12_1_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.tuesday.t12_1_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-primary text-center fixed-break"
+      }, "\xA0"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        onClick: this.togglePopup,
+        id: "c6"
+      }, this.state.tuesday.t2_3_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.tuesday.t2_3_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        onClick: this.togglePopup,
+        id: "c7"
+      }, this.state.tuesday.t3_4_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.tuesday.t3_4_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        onClick: this.togglePopup,
+        id: "c8"
+      }, this.state.tuesday.t4_5_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.tuesday.t4_5_classroom)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-primary text-center fixed-day"
+      }, "Wednesday"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        onClick: this.togglePopup,
+        id: "d1"
+      }, this.state.wednesday.t8_9_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.wednesday.t8_9_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        onClick: this.togglePopup,
+        id: "d2"
+      }, this.state.wednesday.t9_10_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.wednesday.t9_10_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        onClick: this.togglePopup,
+        id: "d3"
+      }, this.state.wednesday.t10_11_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.wednesday.t10_11_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        onClick: this.togglePopup,
+        id: "d4"
+      }, this.state.wednesday.t11_12_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.wednesday.t11_12_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        onClick: this.togglePopup,
+        id: "d5"
+      }, this.state.wednesday.t12_1_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.wednesday.t12_1_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-primary text-center fixed-break"
+      }, "\xA0"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        onClick: this.togglePopup,
+        id: "d6"
+      }, this.state.wednesday.t2_3_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.wednesday.t2_3_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        onClick: this.togglePopup,
+        id: "d7"
+      }, this.state.wednesday.t3_4_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.wednesday.t3_4_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        onClick: this.togglePopup,
+        id: "d8"
+      }, this.state.wednesday.t4_5_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.wednesday.t4_5_classroom)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-primary text-center fixed-day"
+      }, "Thursday"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        onClick: this.togglePopup,
+        id: "e1"
+      }, this.state.thursday.t8_9_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.thursday.t8_9_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        onClick: this.togglePopup,
+        id: "e2"
+      }, this.state.thursday.t9_10_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.thursday.t9_10_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        onClick: this.togglePopup,
+        id: "e3"
+      }, this.state.thursday.t10_11_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.thursday.t10_11_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        onClick: this.togglePopup,
+        id: "e4"
+      }, this.state.thursday.t11_12_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.thursday.t11_12_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        onClick: this.togglePopup,
+        id: "e5"
+      }, this.state.thursday.t12_1_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.thursday.t12_1_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-primary text-center fixed-break"
+      }, "\xA0"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        onClick: this.togglePopup,
+        id: "e6"
+      }, this.state.thursday.t2_3_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.thursday.t2_3_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        onClick: this.togglePopup,
+        id: "e7"
+      }, this.state.thursday.t3_4_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.thursday.t3_4_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        onClick: this.togglePopup,
+        id: "e8"
+      }, this.state.thursday.t4_5_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.thursday.t4_5_classroom)))) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "text-center text-danger mt-2"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        className: "google-font text-danger mt-2"
+      }, "No routine found!")), this.state.isPopup == true ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Popup__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        session: this.state.session,
+        section: this.state.section,
+        semester: this.state.semester,
+        courses: this.state.courses,
+        classrooms: this.state.classrooms,
+        togglePopup: this.togglePopup.bind(this),
+        closePopup: this.closePopup.bind(this),
+        id: this.state.id,
+        reload: this.reload.bind(this)
+      }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null));
+    }
+  }]);
+
+  return Modify;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (Modify);
+
+/***/ }),
+
+/***/ "./resources/js/components/dashboards/Teacher/Popup.jsx":
+/*!**************************************************************!*\
+  !*** ./resources/js/components/dashboards/Teacher/Popup.jsx ***!
+  \**************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+
+
+var Popup =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Popup, _Component);
+
+  function Popup(props) {
+    var _this;
+
+    _classCallCheck(this, Popup);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Popup).call(this, props));
+    _this.state = {
+      classrooms: _this.props.classrooms,
+      courses: _this.props.courses,
+      semester: _this.props.semester,
+      section: _this.props.section,
+      session: _this.props.session,
+      id: _this.props.id,
+      day: "",
+      slot: ""
+    };
+    _this.handleSubmit = _this.handleSubmit.bind(_assertThisInitialized(_this));
+    return _this;
+  }
+
+  _createClass(Popup, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var tid = this.props.id;
+      var day = tid.substring(0, 1);
+      var time = tid.substring(1, 2);
+
+      if (day === "a") {
+        this.setState({
+          day: "Sunday"
+        });
+      } else if (day === "b") {
+        this.setState({
+          day: "Monday"
+        });
+      } else if (day === "c") {
+        this.setState({
+          day: "Tuesday"
+        });
+      } else if (day === "d") {
+        this.setState({
+          day: "Wednesday"
+        });
+      } else if (day === "e") {
+        this.setState({
+          day: "Thursday"
+        });
+      }
+
+      if (time === "1") {
+        this.setState({
+          slot: "8_9"
+        });
+      } else if (time === "2") {
+        this.setState({
+          slot: "9_10"
+        });
+      } else if (time === "3") {
+        this.setState({
+          slot: "10_11"
+        });
+      } else if (time === "4") {
+        this.setState({
+          slot: "11_12"
+        });
+      } else if (time === "5") {
+        this.setState({
+          slot: "12_1"
+        });
+      } else if (time === "6") {
+        this.setState({
+          slot: "2_3"
+        });
+      } else if (time === "7") {
+        this.setState({
+          slot: "3_4"
+        });
+      } else if (time === "8") {
+        this.setState({
+          slot: "4_5"
+        });
+      }
+    }
+  }, {
+    key: "handleSubmit",
+    value: function handleSubmit(event) {
+      var _this2 = this;
+
+      event.preventDefault();
+      axios__WEBPACK_IMPORTED_MODULE_1___default.a.put("/api/routine/CSE/".concat(this.state.session, "/").concat(this.state.semester, "/").concat(this.state.section, "/").concat(this.state.day, "/").concat(this.state.slot, "/").concat(event.target.course.value, "/").concat(event.target.classroom.value)).then(function (response) {
+        if (response.status == 200) {
+          console.log("Putted");
+
+          _this2.props.closePopup();
+
+          console.log("Putted");
+
+          _this2.props.reload();
+        }
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "popup"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "popup-inner"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "dash-box col-md-6 offset-md-3 text-center"
+      }, this.state.courses.length !== 0 && this.state.classrooms.length !== 0 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+        onSubmit: this.handleSubmit
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        "class": "form-group"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+        "for": "exampleFormControlSelect1"
+      }, "Select Course"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
+        "class": "form-control",
+        id: "exampleFormControlSelect1",
+        name: "course"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+        value: "None"
+      }, "None"), this.state.courses.map(function (course) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, course.code);
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        "class": "form-group"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+        "for": "exampleFormControlSelect1"
+      }, "Select Classroom"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
+        "class": "form-control",
+        id: "exampleFormControlSelect1",
+        name: "classroom"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+        value: "None"
+      }, "None"), this.state.classrooms.map(function (classroom) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, classroom.room_number);
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form-group"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        type: "submit",
+        className: "btn btn-info text-light"
+      }, "Submit")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form-group"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        onClick: this.props.togglePopup,
+        className: "btn btn-danger text-light"
+      }, "Cancel"))) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "No course or classroom found", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form-group"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        onClick: this.props.togglePopup,
+        className: "btn btn-danger text-light"
+      }, "Close"))))));
+    }
+  }]);
+
+  return Popup;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (Popup);
+
+/***/ }),
+
+/***/ "./resources/js/components/dashboards/Teacher/Show.jsx":
+/*!*************************************************************!*\
+  !*** ./resources/js/components/dashboards/Teacher/Show.jsx ***!
+  \*************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _Popup__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Popup */ "./resources/js/components/dashboards/Teacher/Popup.jsx");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+
+
+
+var Show =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Show, _Component);
+
+  function Show(props) {
+    var _this;
+
+    _classCallCheck(this, Show);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Show).call(this, props));
+    _this.state = {
+      sunday: [],
+      monday: [],
+      tuesday: [],
+      wednesday: [],
+      thursday: [],
+      id: "",
+      error: "",
+      isPopup: false,
+      session: "",
+      semester: "",
+      section: "",
+      courses: [],
+      dept: "",
+      classrooms: [],
+      isShowable: false
+    };
+    _this.togglePopup = _this.togglePopup.bind(_assertThisInitialized(_this));
+    _this.closePopup = _this.closePopup.bind(_assertThisInitialized(_this));
+    _this.reload = _this.reload.bind(_assertThisInitialized(_this));
+    _this.handleSessionSubmit = _this.handleSessionSubmit.bind(_assertThisInitialized(_this));
+    return _this;
+  }
+
+  _createClass(Show, [{
+    key: "togglePopup",
+    value: function togglePopup(event) {
+      event.preventDefault();
+      this.setState({
+        isPopup: !this.state.isPopup,
+        id: event.target.id
+      });
+    }
+  }, {
+    key: "closePopup",
+    value: function closePopup() {
+      this.setState({
+        isPopup: !this.state.isPopup
+      });
+    }
+  }, {
+    key: "handleSessionSubmit",
+    value: function handleSessionSubmit(event) {
+      var _this2 = this;
+
+      event.preventDefault();
+
+      if (event.target.semester.value != null && event.target.session.value != null && event.target.section.value != null) {
+        this.setState({
+          session: event.target.session.value,
+          semester: event.target.semester.value,
+          section: event.target.section.value
+        });
+        axios__WEBPACK_IMPORTED_MODULE_1___default.a.put("/api/courses/".concat(event.target.semester.value)).then(function (response) {
+          if (response.status == 200) {
+            _this2.setState({
+              courses: response.data
+            });
+
+            console.log(_this2.state.courses);
+          }
+        });
+        axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/api/classrooms").then(function (response) {
+          if (response.status == 200) {
+            _this2.setState({
+              classrooms: response.data
+            });
+
+            console.log(_this2.state.classrooms);
+          }
+        });
+        axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/api/routine/CSE/".concat(event.target.session.value, "/").concat(event.target.semester.value, "/").concat(event.target.section.value, "/Sunday")).then(function (response) {
+          if (response.status == 200 && response.data.length != 0) {
+            _this2.setState({
+              sunday: response.data[0],
+              isShowable: true
+            });
+
+            console.log("Sunday:");
+            console.log(_this2.state.sunday);
+          } else {
+            _this2.setState({
+              isShowable: false
+            });
+          }
+        });
+        axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/api/routine/CSE/".concat(event.target.session.value, "/").concat(event.target.semester.value, "/").concat(event.target.section.value, "/Monday")).then(function (response) {
+          if (response.status == 200 && response.data.length != 0) {
+            _this2.setState({
+              monday: response.data[0],
+              isShowable: true
+            });
+
+            console.log(_this2.state.monday);
+          } else {
+            _this2.setState({
+              isShowable: false
+            });
+          }
+        });
+        axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/api/routine/CSE/".concat(event.target.session.value, "/").concat(event.target.semester.value, "/").concat(event.target.section.value, "/Tuesday")).then(function (response) {
+          if (response.status == 200 && response.data.length != 0) {
+            _this2.setState({
+              tuesday: response.data[0],
+              isShowable: true
+            });
+
+            console.log(_this2.state.tuesday);
+          } else {
+            _this2.setState({
+              isShowable: false
+            });
+          }
+        });
+        axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/api/routine/CSE/".concat(event.target.session.value, "/").concat(event.target.semester.value, "/").concat(event.target.section.value, "/Wednesday")).then(function (response) {
+          if (response.status == 200 && response.data.length != 0) {
+            _this2.setState({
+              wednesday: response.data[0],
+              isShowable: true
+            });
+
+            console.log(_this2.state.wednesday);
+          } else {
+            _this2.setState({
+              isShowable: false
+            });
+          }
+        });
+        axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/api/routine/CSE/".concat(event.target.session.value, "/").concat(event.target.semester.value, "/").concat(event.target.section.value, "/Thursday")).then(function (response) {
+          if (response.status == 200 && response.data.length != 0) {
+            _this2.setState({
+              thursday: response.data[0],
+              isShowable: true
+            });
+
+            console.log(_this2.state.thursday);
+          } else {
+            _this2.setState({
+              isShowable: false
+            });
+          }
+        });
+      }
+    }
+  }, {
+    key: "reload",
+    value: function reload() {
+      var _this3 = this;
+
+      axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/api/routine/CSE/".concat(this.state.session, "/").concat(this.state.semester, "/").concat(this.state.section, "/Sunday")).then(function (response) {
+        if (response.status == 200 && response.data.length != 0) {
+          _this3.setState({
+            sunday: response.data[0]
+          });
+
+          console.log("Sunday:");
+          console.log(_this3.state.sunday);
+        } else if (response.status == 200 && response.data.length == 0) {
+          var dummy = {
+            department: "CSE",
+            session: _this3.state.session,
+            semester: _this3.state.semester,
+            section: _this3.state.section,
+            day: "Sunday",
+            t8_9_course: "",
+            t8_9_classroom: "",
+            t9_10_course: "",
+            t9_10_classroom: "",
+            t10_11_course: "",
+            t10_11_classroom: "",
+            t11_12_course: "",
+            t11_12_classroom: "",
+            t12_1_course: "",
+            t12_1_classroom: "",
+            t2_3_course: "",
+            t2_3_classroom: "",
+            t3_4_course: "",
+            t3_4_classroom: "",
+            t4_5_course: "",
+            t4_5_classroom: ""
+          };
+          axios__WEBPACK_IMPORTED_MODULE_1___default.a.post("/api/routine/", dummy).then(function (response) {
+            if (response.status == 200) {
+              console.log("successfully initiated");
+            }
+          });
+        }
+      });
+      axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/api/routine/CSE/".concat(this.state.session, "/").concat(this.state.semester, "/").concat(this.state.section, "/Monday")).then(function (response) {
+        if (response.status == 200 && response.data.length != 0) {
+          _this3.setState({
+            monday: response.data[0]
+          });
+
+          console.log(_this3.state.monday);
+        } else if (response.status == 200 && response.data.length == 0) {
+          var dummy = {
+            department: "CSE",
+            session: _this3.state.session,
+            semester: _this3.state.semester,
+            section: _this3.state.section,
+            day: "Monday",
+            t8_9_course: "",
+            t8_9_classroom: "",
+            t9_10_course: "",
+            t9_10_classroom: "",
+            t10_11_course: "",
+            t10_11_classroom: "",
+            t11_12_course: "",
+            t11_12_classroom: "",
+            t12_1_course: "",
+            t12_1_classroom: "",
+            t2_3_course: "",
+            t2_3_classroom: "",
+            t3_4_course: "",
+            t3_4_classroom: "",
+            t4_5_course: "",
+            t4_5_classroom: ""
+          };
+          axios__WEBPACK_IMPORTED_MODULE_1___default.a.post("/api/routine/", dummy).then(function (response) {
+            if (response.status == 200) {
+              console.log("successfully initiated");
+            }
+          });
+        }
+      });
+      axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/api/routine/CSE/".concat(this.state.session, "/").concat(this.state.semester, "/").concat(this.state.section, "/Tuesday")).then(function (response) {
+        if (response.status == 200 && response.data.length != 0) {
+          _this3.setState({
+            tuesday: response.data[0]
+          });
+
+          console.log(_this3.state.tuesday);
+        } else if (response.status == 200 && response.data.length == 0) {
+          var dummy = {
+            department: "CSE",
+            session: _this3.state.session,
+            semester: _this3.state.semester,
+            section: _this3.state.section,
+            day: "Tuesday",
+            t8_9_course: "",
+            t8_9_classroom: "",
+            t9_10_course: "",
+            t9_10_classroom: "",
+            t10_11_course: "",
+            t10_11_classroom: "",
+            t11_12_course: "",
+            t11_12_classroom: "",
+            t12_1_course: "",
+            t12_1_classroom: "",
+            t2_3_course: "",
+            t2_3_classroom: "",
+            t3_4_course: "",
+            t3_4_classroom: "",
+            t4_5_course: "",
+            t4_5_classroom: ""
+          };
+          axios__WEBPACK_IMPORTED_MODULE_1___default.a.post("/api/routine/", dummy).then(function (response) {
+            if (response.status == 200) {
+              console.log("successfully initiated");
+            }
+          });
+        }
+      });
+      axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/api/routine/CSE/".concat(this.state.session, "/").concat(this.state.semester, "/").concat(this.state.section, "/Wednesday")).then(function (response) {
+        if (response.status == 200 && response.data.length != 0) {
+          _this3.setState({
+            wednesday: response.data[0]
+          });
+
+          console.log(_this3.state.wednesday);
+        } else if (response.status == 200 && response.data.length == 0) {
+          var dummy = {
+            department: "CSE",
+            session: _this3.state.session,
+            semester: _this3.state.semester,
+            section: _this3.state.section,
+            day: "Wednesday",
+            t8_9_course: "",
+            t8_9_classroom: "",
+            t9_10_course: "",
+            t9_10_classroom: "",
+            t10_11_course: "",
+            t10_11_classroom: "",
+            t11_12_course: "",
+            t11_12_classroom: "",
+            t12_1_course: "",
+            t12_1_classroom: "",
+            t2_3_course: "",
+            t2_3_classroom: "",
+            t3_4_course: "",
+            t3_4_classroom: "",
+            t4_5_course: "",
+            t4_5_classroom: ""
+          };
+          axios__WEBPACK_IMPORTED_MODULE_1___default.a.post("/api/routine/", dummy).then(function (response) {
+            if (response.status == 200) {
+              console.log("successfully initiated");
+            }
+          });
+        }
+      });
+      axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/api/routine/CSE/".concat(this.state.session, "/").concat(this.state.semester, "/").concat(this.state.section, "/Thursday")).then(function (response) {
+        if (response.status == 200 && response.data.length != 0) {
+          _this3.setState({
+            thursday: response.data[0]
+          });
+
+          console.log(_this3.state.thursday);
+        } else if (response.status == 200 && response.data.length == 0) {
+          var dummy = {
+            department: "CSE",
+            session: _this3.state.session,
+            semester: _this3.state.semester,
+            section: _this3.state.section,
+            day: "Thursday",
+            t8_9_course: "",
+            t8_9_classroom: "",
+            t9_10_course: "",
+            t9_10_classroom: "",
+            t10_11_course: "",
+            t10_11_classroom: "",
+            t11_12_course: "",
+            t11_12_classroom: "",
+            t12_1_course: "",
+            t12_1_classroom: "",
+            t2_3_course: "",
+            t2_3_classroom: "",
+            t3_4_course: "",
+            t3_4_classroom: "",
+            t4_5_course: "",
+            t4_5_classroom: ""
+          };
+          axios__WEBPACK_IMPORTED_MODULE_1___default.a.post("/api/routine/", dummy).then(function (response) {
+            if (response.status == 200) {
+              console.log("successfully initiated");
+            }
+          });
+        }
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        id: "top-box",
+        className: "dash-box col-md-10 offset-md-1 py-2 text-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+        className: "google-font mt-4 text-center"
+      }, "Select Session & Semester"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+        onSubmit: this.handleSessionSubmit
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        "class": "form-group"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
+        "class": "col form-control",
+        id: "exampleFormControlSelect1",
+        required: true,
+        name: "session"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+        disabled: true,
+        selected: true
+      }, "Select Session"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "2015-16"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "2016-17"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "2017-18"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "2018-19")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
+        "class": "col ml-2 form-control",
+        id: "exampleFormControlSelect1",
+        required: true,
+        name: "semester"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+        disabled: true,
+        selected: true
+      }, "Select Semester"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "1-1"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "1-2"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "2-1"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "2-2"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "3-1"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "3-2"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "4-1"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "4-2")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
+        "class": "col ml-2 form-control",
+        id: "exampleFormControlSelect1",
+        required: true,
+        name: "section"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+        disabled: true,
+        selected: true
+      }, "Select Section"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "A"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "B"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "No Section")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "form-group"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        type: "submit",
+        className: "btn btn-success"
+      }, "Proceed")))), this.state.isShowable ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        id: "routine-view"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "fixed"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-primary text-center fixed-day",
+        disabled: true
+      }, "Day\xA0"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-info text-center",
+        disabled: true
+      }, "8-9"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-info text-center",
+        disabled: true
+      }, "9-10"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-info text-center",
+        disabled: true
+      }, "10-11"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-info text-center",
+        disabled: true
+      }, "11-12"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-info text-center",
+        disabled: true
+      }, "12-1"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-primary text-center fixed-break",
+        disabled: true
+      }, "Break"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-info text-center",
+        disabled: true
+      }, "2-3"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-info text-center",
+        disabled: true
+      }, "3-4"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-info text-center",
+        disabled: true
+      }, "4-5")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-primary text-center fixed-day"
+      }, "Sunday"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        id: "a1"
+      }, this.state.sunday.t8_9_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.sunday.t8_9_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        id: "a2"
+      }, this.state.sunday.t9_10_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.sunday.t9_10_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        id: "a3"
+      }, this.state.sunday.t10_11_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.sunday.t10_11_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        id: "a4"
+      }, this.state.sunday.t11_12_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.sunday.t11_12_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        id: "a5"
+      }, this.state.sunday.t12_1_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.sunday.t12_1_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-primary text-center fixed-break"
+      }, "\xA0"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        id: "a6"
+      }, this.state.sunday.t2_3_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.sunday.t2_3_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        id: "a7"
+      }, this.state.sunday.t3_4_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.sunday.t3_4_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        id: "a8"
+      }, this.state.sunday.t4_5_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.sunday.t4_5_classroom)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-primary text-center fixed-day"
+      }, "Monday"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        id: "b1"
+      }, this.state.monday.t8_9_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.monday.t8_9_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        id: "b2"
+      }, this.state.monday.t9_10_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.monday.t9_10_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        id: "b3"
+      }, this.state.monday.t10_11_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.monday.t10_11_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        id: "b4"
+      }, this.state.monday.t11_12_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.monday.t11_12_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        id: "b5"
+      }, this.state.monday.t12_1_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.monday.t12_1_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-primary text-center fixed-break"
+      }, "\xA0"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        id: "b6"
+      }, this.state.monday.t2_3_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.monday.t2_3_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        id: "b7"
+      }, this.state.monday.t3_4_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.monday.t3_4_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        id: "b8"
+      }, this.state.monday.t4_5_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.monday.t4_5_classroom)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-primary text-center fixed-day"
+      }, "Tuesday"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        id: "c1"
+      }, this.state.tuesday.t8_9_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.tuesday.t8_9_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        id: "c2"
+      }, this.state.tuesday.t9_10_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.tuesday.t9_10_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        id: "c3"
+      }, this.state.tuesday.t10_11_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.tuesday.t10_11_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        id: "c4"
+      }, this.state.tuesday.t11_12_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.tuesday.t11_12_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        id: "c5"
+      }, this.state.tuesday.t12_1_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.tuesday.t12_1_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-primary text-center fixed-break"
+      }, "\xA0"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        id: "c6"
+      }, this.state.tuesday.t2_3_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.tuesday.t2_3_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        id: "c7"
+      }, this.state.tuesday.t3_4_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.tuesday.t3_4_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        id: "c8"
+      }, this.state.tuesday.t4_5_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.tuesday.t4_5_classroom)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-primary text-center fixed-day"
+      }, "Wednesday"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        id: "d1"
+      }, this.state.wednesday.t8_9_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.wednesday.t8_9_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        id: "d2"
+      }, this.state.wednesday.t9_10_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.wednesday.t9_10_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        id: "d3"
+      }, this.state.wednesday.t10_11_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.wednesday.t10_11_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        id: "d4"
+      }, this.state.wednesday.t11_12_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.wednesday.t11_12_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        id: "d5"
+      }, this.state.wednesday.t12_1_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.wednesday.t12_1_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-primary text-center fixed-break"
+      }, "\xA0"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        id: "d6"
+      }, this.state.wednesday.t2_3_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.wednesday.t2_3_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        id: "d7"
+      }, this.state.wednesday.t3_4_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.wednesday.t3_4_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        id: "d8"
+      }, this.state.wednesday.t4_5_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.wednesday.t4_5_classroom)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-primary text-center fixed-day"
+      }, "Thursday"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        id: "e1"
+      }, this.state.thursday.t8_9_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.thursday.t8_9_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        id: "e2"
+      }, this.state.thursday.t9_10_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.thursday.t9_10_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        id: "e3"
+      }, this.state.thursday.t10_11_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.thursday.t10_11_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        id: "e4"
+      }, this.state.thursday.t11_12_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.thursday.t11_12_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        id: "e5"
+      }, this.state.thursday.t12_1_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.thursday.t12_1_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-primary text-center fixed-break"
+      }, "\xA0"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        id: "e6"
+      }, this.state.thursday.t2_3_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.thursday.t2_3_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        id: "e7"
+      }, this.state.thursday.t3_4_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.thursday.t3_4_classroom), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col btn btn-light text-center",
+        id: "e8"
+      }, this.state.thursday.t4_5_course, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.thursday.t4_5_classroom)))) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "text-center text-danger mt-2"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        className: "google-font text-danger mt-2"
+      }, "No routine found!")));
+    }
+  }]);
+
+  return Show;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (Show);
+
+/***/ }),
+
+/***/ "./resources/js/components/dashboards/TeacherDash.js":
+/*!***********************************************************!*\
+  !*** ./resources/js/components/dashboards/TeacherDash.js ***!
+  \***********************************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -65616,11 +67232,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _adminComponents_Dashboard__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./adminComponents/Dashboard */ "./resources/js/components/admin/adminComponents/Dashboard.jsx");
-/* harmony import */ var _adminComponents_ManageCR__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./adminComponents/ManageCR */ "./resources/js/components/admin/adminComponents/ManageCR.jsx");
-/* harmony import */ var _adminComponents_ManageAdminTeacher__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./adminComponents/ManageAdminTeacher */ "./resources/js/components/admin/adminComponents/ManageAdminTeacher.jsx");
-/* harmony import */ var _adminComponents_ManageClassroom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./adminComponents/ManageClassroom */ "./resources/js/components/admin/adminComponents/ManageClassroom.jsx");
-/* harmony import */ var _adminComponents_ManageCourse__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./adminComponents/ManageCourse */ "./resources/js/components/admin/adminComponents/ManageCourse.jsx");
+/* harmony import */ var _Teacher_Dash__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Teacher/Dash */ "./resources/js/components/dashboards/Teacher/Dash.jsx");
+/* harmony import */ var _Teacher_Show__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Teacher/Show */ "./resources/js/components/dashboards/Teacher/Show.jsx");
+/* harmony import */ var _Teacher_Modify__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Teacher/Modify */ "./resources/js/components/dashboards/Teacher/Modify.jsx");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -65646,1097 +67260,64 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-
-
-var AdminDash =
+var TeacherDash =
 /*#__PURE__*/
 function (_Component) {
-  _inherits(AdminDash, _Component);
+  _inherits(TeacherDash, _Component);
 
-  function AdminDash() {
-    _classCallCheck(this, AdminDash);
+  function TeacherDash() {
+    _classCallCheck(this, TeacherDash);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(AdminDash).apply(this, arguments));
+    return _possibleConstructorReturn(this, _getPrototypeOf(TeacherDash).apply(this, arguments));
   }
 
-  _createClass(AdminDash, [{
+  _createClass(TeacherDash, [{
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["BrowserRouter"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
         exact: true,
-        path: "/admin/home",
-        component: _adminComponents_Dashboard__WEBPACK_IMPORTED_MODULE_3__["default"]
+        path: "/home/teacher/showRoutine",
+        component: _Teacher_Show__WEBPACK_IMPORTED_MODULE_4__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
         exact: true,
-        path: "/admin/home/manageCR",
-        component: _adminComponents_ManageCR__WEBPACK_IMPORTED_MODULE_4__["default"]
+        path: "/home/teacher/modifyRoutine",
+        component: _Teacher_Modify__WEBPACK_IMPORTED_MODULE_5__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
         exact: true,
-        path: "/admin/home/manageAdminTeacher",
-        component: _adminComponents_ManageAdminTeacher__WEBPACK_IMPORTED_MODULE_5__["default"]
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
-        exact: true,
-        path: "/admin/home/manageClassroom",
-        component: _adminComponents_ManageClassroom__WEBPACK_IMPORTED_MODULE_6__["default"]
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
-        exact: true,
-        path: "/admin/home/manageCourse",
-        component: _adminComponents_ManageCourse__WEBPACK_IMPORTED_MODULE_7__["default"]
+        path: "/home",
+        component: _Teacher_Dash__WEBPACK_IMPORTED_MODULE_3__["default"]
       }));
     }
   }]);
 
-  return AdminDash;
+  return TeacherDash;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
-react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(AdminDash, null), document.querySelector("#admin-dash"));
+react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TeacherDash, null), document.querySelector("#teacher"));
 
 /***/ }),
 
-/***/ "./resources/js/components/admin/adminComponents/Dashboard.jsx":
-/*!*********************************************************************!*\
-  !*** ./resources/js/components/admin/adminComponents/Dashboard.jsx ***!
-  \*********************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-
-
-
-
-var Dashboard =
-/*#__PURE__*/
-function (_Component) {
-  _inherits(Dashboard, _Component);
-
-  function Dashboard() {
-    var _this;
-
-    _classCallCheck(this, Dashboard);
-
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(Dashboard).call(this));
-    _this.state = {
-      crs: 0,
-      adminTeachers: 0,
-      classrooms: 0
-    };
-    return _this;
-  }
-
-  _createClass(Dashboard, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      var _this2 = this;
-
-      axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/api/classrooms").then(function (response) {
-        // console.log(response.data.length);
-        _this2.setState({
-          classrooms: response.data.length
-        });
-      });
-      axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/api/crs").then(function (response) {
-        // console.log(response.data.length);
-        _this2.setState({
-          crs: response.data.length
-        });
-      });
-      axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/api/adminTeachers").then(function (response) {
-        // console.log(response.data.length);
-        _this2.setState({
-          adminTeachers: response.data.length
-        });
-      });
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-md-12 hero-browser-inner is-revealing"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "form-box center-text"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-        className: "google-font center-text"
-      }, "Admin Dashboard"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "container-fluid is-revealing col-md-12"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "row"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-sm-3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["NavLink"], {
-        to: "/admin/home/manageCR",
-        className: " no-underline"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/images/student-icon.svg",
-        className: "dashboard-icons"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
-        className: "google-font no-underline"
-      }, "Manage CRs"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-sm-3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["NavLink"], {
-        to: "/admin/home/manageAdminTeacher",
-        className: " no-underline"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/images/teacher-icon.svg",
-        className: "dashboard-icons"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
-        className: "google-font no-underline"
-      }, "Manage Admin Teachers"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-sm-3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["NavLink"], {
-        to: "/admin/home/manageCourse",
-        className: " no-underline"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/images/course-icon.svg",
-        className: "dashboard-icons"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
-        className: "google-font no-underline"
-      }, "Manage Courses"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-sm-3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["NavLink"], {
-        to: "/admin/home/manageClassroom",
-        className: " no-underline"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/images/classroom-icon.svg",
-        className: "dashboard-icons"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
-        className: "google-font no-underline"
-      }, "Manage Classrooms")))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "container-fluid is-revealing col-md-12"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "row"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-md-4 left"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "form-box dash-1"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
-        className: "google-font"
-      }, "Total Classrooms"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-        className: "google-font big-text"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, this.state.classrooms)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-        className: " no-underline",
-        to: "/admin/home/manageClassroom"
-      }, "See All\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "fas fa-arrow-circle-right"
-      })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-md-4 center"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "form-box dash-2 "
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
-        className: "google-font"
-      }, "Total Class\xA0Representatives"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-        className: "google-font big-text"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, this.state.crs)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-        className: " no-underline",
-        to: "/admin/home/manageCR"
-      }, "See All\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "fas fa-arrow-circle-right"
-      })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-md-4 right"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "form-box dash-3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
-        className: "google-font"
-      }, "Total Admin\xA0Teachers"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-        className: "google-font big-text"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, this.state.adminTeachers)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-        to: "/admin/home/manageAdminTeacher",
-        className: " no-underline"
-      }, "See All\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "fas fa-arrow-circle-right"
-      }))))))));
-    }
-  }]);
-
-  return Dashboard;
-}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
-
-/* harmony default export */ __webpack_exports__["default"] = (Dashboard);
-
-/***/ }),
-
-/***/ "./resources/js/components/admin/adminComponents/ManageAdminTeacher.jsx":
-/*!******************************************************************************!*\
-  !*** ./resources/js/components/admin/adminComponents/ManageAdminTeacher.jsx ***!
-  \******************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-
-
-
-
-var ManageAdminTeacher =
-/*#__PURE__*/
-function (_Component) {
-  _inherits(ManageAdminTeacher, _Component);
-
-  function ManageAdminTeacher() {
-    var _this;
-
-    _classCallCheck(this, ManageAdminTeacher);
-
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(ManageAdminTeacher).call(this));
-    _this.state = {
-      email: "",
-      adminTeachers: [],
-      status: "Add",
-      warning: ""
-    };
-    _this.handleChange = _this.handleChange.bind(_assertThisInitialized(_this));
-    _this.handleSubmit = _this.handleSubmit.bind(_assertThisInitialized(_this));
-    return _this;
-  }
-
-  _createClass(ManageAdminTeacher, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      var _this2 = this;
-
-      axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/api/adminTeachers").then(function (response) {
-        // console.log(response.data);
-        _this2.setState({
-          adminTeachers: response.data
-        });
-      });
-    }
-  }, {
-    key: "handleChange",
-    value: function handleChange(event) {
-      this.setState({
-        email: event.target.value
-      });
-    }
-  }, {
-    key: "handleDelete",
-    value: function handleDelete(email) {
-      var _this3 = this;
-
-      // console.log(email);
-      axios__WEBPACK_IMPORTED_MODULE_1___default.a.put("/api/adminTeachers/delete/".concat(email)).then(function (response) {
-        // console.log(response.data.length);
-        if (response.status == 200) {
-          axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/api/adminTeachers").then(function (response) {
-            // console.log(response.data);
-            _this3.setState({
-              adminTeachers: response.data
-            });
-          });
-        }
-      });
-    }
-  }, {
-    key: "handleSubmit",
-    value: function handleSubmit(event) {
-      var _this4 = this;
-
-      event.preventDefault();
-      this.setState({
-        status: "Adding...."
-      });
-      axios__WEBPACK_IMPORTED_MODULE_1___default.a.put("/api/adminTeachers/".concat(this.state.email)).then(function (response) {
-        // console.log(response.data.length);
-        if (response.status == 200) {
-          _this4.setState({
-            status: "Add",
-            email: "",
-            warning: response.data
-          });
-
-          axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/api/adminTeachers").then(function (response) {
-            // console.log(response.data);
-            _this4.setState({
-              adminTeachers: response.data
-            });
-          });
-          document.getElementById("emailBox").value = "";
-        } else {
-          _this4.setState({
-            warning: "Adding Failed"
-          });
-
-          document.getElementById("emailBox").value = "";
-        }
-
-        setTimeout(function () {
-          this.setState({
-            warning: ""
-          });
-        }.bind(_this4), 1000);
-      });
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this5 = this;
-
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-md-12 hero-browser-inner is-revealing"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "form-box  center-text"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-        className: "google-font center-text"
-      }, "Admin Teachers"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "container-fluid is-revealing col-md-12"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "row"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
-        className: "google-font col-md-12"
-      }, "Create a new Admin Teacher"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        className: "form-control col-md-6 offset-md-3",
-        type: "email",
-        id: "emailBox",
-        onChange: this.handleChange,
-        placeholder: "Type the email address"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.email ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        className: "btn btn-success col-md-2 offset-md-5",
-        onClick: this.handleSubmit
-      }, this.state.status) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-        className: "offset-md-4 col-md-4 text-warning text-center"
-      }, this.state.warning), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
-        className: "google-font center-text margined-top col-md-4 offset-md-4"
-      }, "All Admin Teachers"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", {
-        className: "table table-striped"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
-        scope: "col"
-      }, "Name"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
-        scope: "col"
-      }, "Email"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
-        scope: "col"
-      }, "Department"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
-        scope: "col"
-      }, "Designation"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
-        scope: "col"
-      }, "Action"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, this.state.adminTeachers.map(function (adminTeacher) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, adminTeacher.user.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, adminTeacher.user.email), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, adminTeacher.department), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, adminTeacher.designation), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-          className: "btn btn-danger",
-          onClick: function onClick() {
-            return _this5.handleDelete(adminTeacher.user.email);
-          }
-        }, "Delete")));
-      })))))));
-    }
-  }]);
-
-  return ManageAdminTeacher;
-}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
-
-/* harmony default export */ __webpack_exports__["default"] = (ManageAdminTeacher);
-
-/***/ }),
-
-/***/ "./resources/js/components/admin/adminComponents/ManageCR.jsx":
-/*!********************************************************************!*\
-  !*** ./resources/js/components/admin/adminComponents/ManageCR.jsx ***!
-  \********************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-
-
-
-
-var ManageCR =
-/*#__PURE__*/
-function (_Component) {
-  _inherits(ManageCR, _Component);
-
-  function ManageCR() {
-    var _this;
-
-    _classCallCheck(this, ManageCR);
-
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(ManageCR).call(this));
-    _this.state = {
-      email: "",
-      crs: [],
-      status: "Add",
-      warning: ""
-    };
-    _this.handleChange = _this.handleChange.bind(_assertThisInitialized(_this));
-    _this.handleSubmit = _this.handleSubmit.bind(_assertThisInitialized(_this));
-    _this.handleDelete = _this.handleDelete.bind(_assertThisInitialized(_this));
-    return _this;
-  }
-
-  _createClass(ManageCR, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      var _this2 = this;
-
-      axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/api/crs").then(function (response) {
-        // console.log(response.data);
-        _this2.setState({
-          crs: response.data
-        });
-      });
-    }
-  }, {
-    key: "handleChange",
-    value: function handleChange(event) {
-      this.setState({
-        email: event.target.value
-      });
-    }
-  }, {
-    key: "handleDelete",
-    value: function handleDelete(email) {
-      var _this3 = this;
-
-      // console.log(email);
-      axios__WEBPACK_IMPORTED_MODULE_1___default.a.put("/api/crs/delete/".concat(email)).then(function (response) {
-        // console.log(response.data.length);
-        if (response.status == 200) {
-          axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/api/crs").then(function (response) {
-            // console.log(response.data);
-            _this3.setState({
-              crs: response.data
-            });
-          });
-        }
-      });
-    }
-  }, {
-    key: "handleSubmit",
-    value: function handleSubmit(event) {
-      var _this4 = this;
-
-      event.preventDefault();
-      this.setState({
-        status: "Adding...."
-      });
-      axios__WEBPACK_IMPORTED_MODULE_1___default.a.put("/api/crs/".concat(this.state.email)).then(function (response) {
-        // console.log(response.data.length);
-        if (response.status == 200) {
-          _this4.setState({
-            status: "Add",
-            email: "",
-            warning: response.data
-          });
-
-          axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/api/crs").then(function (response) {
-            // console.log(response.data);
-            _this4.setState({
-              crs: response.data
-            });
-          });
-          document.getElementById("emailBox").value = "";
-        } else {
-          _this4.setState({
-            warning: "Adding Failed"
-          });
-
-          document.getElementById("emailBox").value = "";
-        }
-
-        setTimeout(function () {
-          this.setState({
-            warning: ""
-          });
-        }.bind(_this4), 1000);
-      });
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this5 = this;
-
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-md-12 hero-browser-inner is-revealing"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "form-box  center-text"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-        className: "google-font center-text"
-      }, "Class Representatives"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "container-fluid is-revealing col-md-12"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "row"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
-        className: "google-font col-md-12"
-      }, "Create a new CR"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        className: "form-control col-md-6 offset-md-3",
-        type: "email",
-        id: "emailBox",
-        onChange: this.handleChange,
-        placeholder: "Type the email address"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.state.email ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        className: "btn btn-success col-md-2 offset-md-5",
-        onClick: this.handleSubmit
-      }, this.state.status) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-        className: "offset-md-4 col-md-4 text-warning text-center"
-      }, this.state.warning), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
-        className: "google-font center-text margined-top col-md-4 offset-md-4"
-      }, "All CRs"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", {
-        className: "table table-striped"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
-        scope: "col"
-      }, "Name"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
-        scope: "col"
-      }, "Email"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
-        scope: "col"
-      }, "Department"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
-        scope: "col"
-      }, "Batch"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
-        scope: "col"
-      }, "Action"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, this.state.crs.map(function (cr) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, cr.user.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, cr.user.email), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, cr.department), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, cr.session), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-          className: "btn btn-danger",
-          onClick: function onClick() {
-            return _this5.handleDelete(cr.user.email);
-          }
-        }, "Delete")));
-      })))))));
-    }
-  }]);
-
-  return ManageCR;
-}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
-
-/* harmony default export */ __webpack_exports__["default"] = (ManageCR);
-
-/***/ }),
-
-/***/ "./resources/js/components/admin/adminComponents/ManageClassroom.jsx":
-/*!***************************************************************************!*\
-  !*** ./resources/js/components/admin/adminComponents/ManageClassroom.jsx ***!
-  \***************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-
-
-
-var ManageClassroom =
-/*#__PURE__*/
-function (_Component) {
-  _inherits(ManageClassroom, _Component);
-
-  function ManageClassroom() {
-    var _this;
-
-    _classCallCheck(this, ManageClassroom);
-
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(ManageClassroom).call(this));
-    _this.state = {
-      room_number: "",
-      building: "",
-      floor: 0,
-      type: "",
-      capacity: 0,
-      classrooms: [],
-      status: "Add",
-      warning: ""
-    };
-    _this.handleSubmit = _this.handleSubmit.bind(_assertThisInitialized(_this));
-    return _this;
-  }
-
-  _createClass(ManageClassroom, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      var _this2 = this;
-
-      axios.get("/api/classrooms").then(function (response) {
-        // console.log(response.data);
-        _this2.setState({
-          classrooms: response.data
-        });
-      });
-    }
-  }, {
-    key: "handleSubmit",
-    value: function handleSubmit(event) {
-      var _this3 = this;
-
-      event.preventDefault();
-      this.setState({
-        status: "Adding...."
-      });
-
-      if (event.target.room_number.value !== null && event.target.building.value !== null && event.target.floor.value !== null && event.target.type.value !== null && event.target.capacity.value !== null) {
-        var classroom = {
-          room_number: event.target.room_number.value,
-          building: event.target.building.value,
-          floor: event.target.floor.value,
-          type: event.target.type.value,
-          capacity: event.target.capacity.value
-        };
-        axios.post("/api/classrooms", classroom).then(function (response) {
-          if (response.status == 200) {
-            _this3.setState({
-              warning: "Added Successfully",
-              status: "Add"
-            });
-
-            axios.get("/api/classrooms").then(function (response) {
-              // console.log(response.data);
-              _this3.setState({
-                classrooms: response.data
-              });
-            });
-            document.getElementById("emailBox").reset();
-            setTimeout(function () {
-              this.setState({
-                warning: ""
-              });
-            }.bind(_this3), 1000);
-          } else {
-            _this3.setState({
-              warning: "Adding Failed",
-              status: "Add"
-            });
-
-            setTimeout(function () {
-              this.setState({
-                warning: ""
-              });
-            }.bind(_this3), 1000);
-          }
-        })["catch"](function (error) {
-          _this3.setState({
-            warning: error.response.data.errors
-          });
-
-          setTimeout(function () {
-            this.setState({
-              warning: ""
-            });
-          }.bind(_this3), 1000);
-        });
-      }
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-md-12 hero-browser-inner is-revealing"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "form-box  center-text"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-        className: "google-font center-text"
-      }, "Classrooms"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "container-fluid is-revealing col-md-12"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "row justify-content-center"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
-        className: "google-font col-md-12"
-      }, "Add a new classroom"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-        className: "col-md-12",
-        onSubmit: this.handleSubmit,
-        id: "emailBox"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "form-group"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        type: "text",
-        "class": "form-control",
-        name: "room_number",
-        placeholder: "Room Number",
-        required: true
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "form-group"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        type: "text",
-        "class": "form-control",
-        name: "building",
-        placeholder: "Building",
-        required: true
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "form-group"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        type: "number",
-        "class": "form-control",
-        name: "floor",
-        placeholder: "Floor",
-        required: true
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "form-group"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
-        "class": "form-control",
-        name: "type",
-        id: "exampleFormControlSelect1",
-        required: true
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
-        disabled: true,
-        selected: true
-      }, "Select Classroom Type"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "General"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "Lab"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "form-group"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        type: "number",
-        "class": "form-control",
-        name: "capacity",
-        placeholder: "Classroom Capacity",
-        required: true
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        type: "submit",
-        "class": "col-md-4 btn btn-success"
-      }, this.state.status), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-        className: "col-md-4 text-info text-center"
-      }, this.state.warning)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-md-10"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
-        className: "google-font center-text margined-top col-md-4"
-      }, "All Classrooms"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", {
-        className: "table table-striped"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
-        scope: "col"
-      }, "Room Number"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
-        scope: "col"
-      }, "Building"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
-        scope: "col"
-      }, "Floor"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
-        scope: "col"
-      }, "Type"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
-        scope: "col"
-      }, "Capacity"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, this.state.classrooms.map(function (classroom) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, classroom.room_number), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, classroom.building), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, classroom.floor), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, classroom.type), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, classroom.capacity));
-      })))))));
-    }
-  }]);
-
-  return ManageClassroom;
-}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
-
-/* harmony default export */ __webpack_exports__["default"] = (ManageClassroom);
-
-/***/ }),
-
-/***/ "./resources/js/components/admin/adminComponents/ManageCourse.jsx":
-/*!************************************************************************!*\
-  !*** ./resources/js/components/admin/adminComponents/ManageCourse.jsx ***!
-  \************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-
-
-
-
-var ManageCourse =
-/*#__PURE__*/
-function (_Component) {
-  _inherits(ManageCourse, _Component);
-
-  function ManageCourse() {
-    var _this;
-
-    _classCallCheck(this, ManageCourse);
-
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(ManageCourse).call(this));
-    _this.state = {
-      code: "",
-      name: "",
-      credit: 0,
-      type: "",
-      courses: [],
-      status: "Add",
-      warning: ""
-    };
-    _this.handleSubmit = _this.handleSubmit.bind(_assertThisInitialized(_this));
-    return _this;
-  }
-
-  _createClass(ManageCourse, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      var _this2 = this;
-
-      axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/api/courses").then(function (response) {
-        // console.log(response.data);
-        _this2.setState({
-          courses: response.data
-        });
-      });
-    }
-  }, {
-    key: "handleSubmit",
-    value: function handleSubmit(event) {
-      var _this3 = this;
-
-      event.preventDefault();
-      this.setState({
-        status: "Adding...."
-      });
-
-      if (event.target.code.value !== null && event.target.name.value !== null && event.target.type.value !== null && event.target.semester.value !== null && event.target.credit.value !== null) {
-        var course = {
-          code: event.target.code.value,
-          name: event.target.name.value,
-          type: event.target.type.value,
-          semester: event.target.semester.value,
-          credit: event.target.credit.value
-        };
-        axios__WEBPACK_IMPORTED_MODULE_1___default.a.post("/api/courses", course).then(function (response) {
-          if (response.status == 200) {
-            _this3.setState({
-              warning: "Added Successfully",
-              status: "Add"
-            });
-
-            axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/api/courses").then(function (response) {
-              // console.log(response.data);
-              _this3.setState({
-                courses: response.data
-              });
-            });
-            document.getElementById("emailBox").reset();
-            setTimeout(function () {
-              this.setState({
-                warning: ""
-              });
-            }.bind(_this3), 1000);
-          } else {
-            _this3.setState({
-              warning: "Adding Failed",
-              status: "Add"
-            });
-
-            setTimeout(function () {
-              this.setState({
-                warning: ""
-              });
-            }.bind(_this3), 1000);
-          }
-        })["catch"](function (error) {
-          _this3.setState({
-            warning: error.response.data.errors
-          });
-
-          setTimeout(function () {
-            this.setState({
-              warning: ""
-            });
-          }.bind(_this3), 1000);
-        });
-      }
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-md-12 hero-browser-inner is-revealing"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "form-box  center-text"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-        className: "google-font center-text"
-      }, "Courses"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "container-fluid is-revealing col-md-12"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "row justify-content-center"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
-        className: "google-font col-md-12"
-      }, "Add a new course"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-        className: "col-md-12",
-        onSubmit: this.handleSubmit,
-        id: "emailBox"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "form-group"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        type: "text",
-        "class": "form-control",
-        name: "code",
-        placeholder: "Course Code",
-        required: true
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "form-group"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        type: "text",
-        "class": "form-control",
-        name: "name",
-        placeholder: "Course Title",
-        required: true
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "form-group"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
-        "class": "form-control",
-        name: "semester",
-        id: "exampleFormControlSelect1",
-        required: true
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
-        disabled: true,
-        selected: true
-      }, "Select Semester"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "1-1"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "1-2"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "2-1"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "2-2"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "3-1"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "3-2"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "4-1"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "4-2"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "form-group"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
-        "class": "form-control",
-        name: "type",
-        id: "exampleFormControlSelect1",
-        required: true
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
-        disabled: true,
-        selected: true
-      }, "Select Course Type"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "Theory"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "Lab"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "form-group"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        type: "number",
-        "class": "form-control",
-        name: "credit",
-        placeholder: "Course Credit",
-        required: true,
-        step: "0.01"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        type: "submit",
-        "class": "col-md-4 btn btn-success"
-      }, this.state.status), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-        className: "col-md-4 text-info text-center"
-      }, this.state.warning)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-md-10"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
-        className: "google-font center-text margined-top col-md-4"
-      }, "All Courses"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", {
-        className: "table table-striped"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
-        scope: "col"
-      }, "Course Code"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
-        scope: "col"
-      }, "Course Name"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
-        scope: "col"
-      }, "Offering Department"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
-        scope: "col"
-      }, "Credit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
-        scope: "col"
-      }, "Semester"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, this.state.courses.map(function (course) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, course.code), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, course.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, course.code.substring(0, 3)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, course.credit), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, course.semester));
-      })))))));
-    }
-  }]);
-
-  return ManageCourse;
-}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
-
-/* harmony default export */ __webpack_exports__["default"] = (ManageCourse);
-
-/***/ }),
-
-/***/ 1:
+/***/ "./resources/js/teacherDash.js":
 /*!*************************************!*\
-  !*** multi ./resources/js/admin.js ***!
+  !*** ./resources/js/teacherDash.js ***!
   \*************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! E:\Routine Management System\routine-management-system\resources\js\admin.js */"./resources/js/admin.js");
+__webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
+
+__webpack_require__(/*! ./components/dashboards/TeacherDash */ "./resources/js/components/dashboards/TeacherDash.js");
+
+/***/ }),
+
+/***/ 4:
+/*!*******************************************!*\
+  !*** multi ./resources/js/teacherDash.js ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! E:\Routine Management System\routine-management-system\resources\js\teacherDash.js */"./resources/js/teacherDash.js");
 
 
 /***/ })

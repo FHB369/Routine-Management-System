@@ -9,6 +9,6 @@ class Course extends Model
     public $timestamps = false;
 
     protected $fillable = [
-        'code', 'name', 'credit', 'type'
+        'code', 'name', 'credit', 'semester', 'type'
     ];
 }

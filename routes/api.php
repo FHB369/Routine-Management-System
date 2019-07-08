@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,3 +29,12 @@ Route::get('classrooms', 'ClassroomController@index');
 Route::post('classrooms', 'ClassroomController@store');
 Route::get('courses', 'CourseController@index');
 Route::post('courses', 'CourseController@store');
+Route::put('courses/{semester}', 'CourseController@semester');
+
+Route::post('logout', 'UserController@logoutApi');
+Route::get('dept/', 'UserController@dept');
+
+Route::get('routine/{department}/{session}/{semester}/{section}/{day}', 'RoutineController@getDay');
+Route::put('routine/{department}/{session}/{semester}/{section}/{day}/{slot}/{course}/{classroom}', 'RoutineController@putSlot');
+Route::post('routine/', 'RoutineController@postDay');
+Route::get('routine/{department}/{session}/{semester}/{section}', 'RoutineController@getAll');

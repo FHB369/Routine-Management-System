@@ -43,12 +43,14 @@ class ManageCourse extends Component {
             event.target.code.value !== null &&
             event.target.name.value !== null &&
             event.target.type.value !== null &&
+            event.target.semester.value !== null &&
             event.target.credit.value !== null
         ) {
             const course = {
                 code: event.target.code.value,
                 name: event.target.name.value,
                 type: event.target.type.value,
+                semester: event.target.semester.value,
                 credit: event.target.credit.value
             };
 
@@ -138,6 +140,26 @@ class ManageCourse extends Component {
                                 <div class="form-group">
                                     <select
                                         class="form-control"
+                                        name="semester"
+                                        id="exampleFormControlSelect1"
+                                        required
+                                    >
+                                        <option disabled selected>
+                                            Select Semester
+                                        </option>
+                                        <option>1-1</option>
+                                        <option>1-2</option>
+                                        <option>2-1</option>
+                                        <option>2-2</option>
+                                        <option>3-1</option>
+                                        <option>3-2</option>
+                                        <option>4-1</option>
+                                        <option>4-2</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select
+                                        class="form-control"
                                         name="type"
                                         id="exampleFormControlSelect1"
                                         required
@@ -182,6 +204,7 @@ class ManageCourse extends Component {
                                         <th scope="col">Course Name</th>
                                         <th scope="col">Offering Department</th>
                                         <th scope="col">Credit</th>
+                                        <th scope="col">Semester</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -193,6 +216,7 @@ class ManageCourse extends Component {
                                                 {course.code.substring(0, 3)}
                                             </td>
                                             <td>{course.credit}</td>
+                                            <td>{course.semester}</td>
                                         </tr>
                                     ))}
                                 </tbody>
