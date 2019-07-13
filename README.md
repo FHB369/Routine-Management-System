@@ -4,7 +4,7 @@ A simple class routine generator webapp build with ReactJS, Laravel and MySql Da
 -------------------------
 
 ## Live Preview:
-https://routinemanagementsystem.000webhost.com
+https://routinemanagementsystem.000webhostapp.com
 -------------------------
 
 How to Setup
